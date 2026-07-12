@@ -13,7 +13,7 @@ pipeline{
     stages{
         stage("build"){
             steps {
-                echo "***building eureka application***"
+                echo "***building ${APPLICATION_NAME} application***"
                 sh "mvn clean"
             }
         }
