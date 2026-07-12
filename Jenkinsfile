@@ -19,7 +19,7 @@ pipeline{
         }
         stage("sonarscan"){
             steps {
-
+                echo "***sonrscans***"
             }
         }
     }
