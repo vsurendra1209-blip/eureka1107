@@ -13,7 +13,7 @@ pipeline{
     stages{
         stage("build"){
             steps {
-                echo "***building ${APPLICATION_NAME} application***"
+                echo "***building ${env.APPLICATION_NAME} application***"
                 sh "mvn clean"
             }
         }
