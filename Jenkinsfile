@@ -14,7 +14,7 @@ pipeline{
         stage("build"){
             steps {
                 echo "***building ${env.APPLICATION_NAME} application***"
-                sh "mvn clean"
+                sh "mvn clean -DskipTests=true"
             }
         }
         stage("sonarscan"){
