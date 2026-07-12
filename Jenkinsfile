@@ -3,7 +3,7 @@ pipeline{
         label "java-slave"
     }
     tools {
-        maven 'maven-3.9.16'
+        maven 'mvn'
     }
     stages{
         stage("build"){
